@@ -19,11 +19,13 @@ namespace SETZ.Controllers
                 ProductModel mod = new ProductModel();
                 mod.product = pr;
                 mod.brand = setzDB.Brands.Find(pr.BrandID);
-                mod.product.Image = "default-img.jpg";
+                
                 var relativePath = "~/Images/Product/" + pr.Image;
                 var absolutePath = HttpContext.Server.MapPath(relativePath);
                 if (System.IO.File.Exists(absolutePath))
                     mod.product.Image = pr.Image;
+                else
+                    mod.product.Image = "default-img.jpg";
                 model.Add(mod);
             }
             return View(model);

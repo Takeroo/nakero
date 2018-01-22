@@ -250,7 +250,7 @@ ul.multi-column-dropdown h6 {
 
 .nav > li > a:hover {
     background: none;
-    color: #01CFCF !important;
+    /*color: #01CFCF !important;*/
 }
 
 .navbar {
@@ -608,7 +608,7 @@ label.b-from-right {
 .mid-2 p {
     float: left;
     font-size: 0.9em;
-    color: #B4B4B4;
+    color: #333;
 }
 
     .mid-2 p em {
@@ -1059,7 +1059,7 @@ span.actual {
         -webkit-transform: skew(10deg);
         transform: skew(10deg);
         color: #fff;
-        background: #FF6C6C;
+        background: #e4572e;
         text-decoration: none;
     }
 

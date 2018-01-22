@@ -403,9 +403,6 @@
     <Content Include="Content\ckeditor\plugins\icons_hidpi.png" />
     <Content Include="Content\ckeditor\plugins\iframe\dialogs\iframe.js" />
     <Content Include="Content\ckeditor\plugins\iframe\images\placeholder.png" />
-    <Content Include="Content\ckeditor\plugins\imageresponsive\lang\de.js" />
-    <Content Include="Content\ckeditor\plugins\imageresponsive\lang\en.js" />
-    <Content Include="Content\ckeditor\plugins\imageresponsive\plugin.js" />
     <Content Include="Content\ckeditor\plugins\image\dialogs\image.js" />
     <Content Include="Content\ckeditor\plugins\image\images\noimage.png" />
     <Content Include="Content\ckeditor\plugins\link\dialogs\anchor.js" />
@@ -743,7 +740,6 @@
     </Content>
     <Content Include="Content\ckeditor\CHANGES.md" />
     <Content Include="Content\ckeditor\LICENSE.md" />
-    <Content Include="Content\ckeditor\plugins\imageresponsive\.git\COMMIT_EDITMSG" />
     <Content Include="Content\ckeditor\plugins\imageresponsive\.git\config" />
     <Content Include="Content\ckeditor\plugins\imageresponsive\.git\description" />
     <Content Include="Content\ckeditor\plugins\imageresponsive\.git\FETCH_HEAD" />
@@ -845,7 +841,6 @@
     <Content Include="Content\ckeditor\plugins\imageresponsive\.git\refs\tags\v1.0.1" />
     <Content Include="Content\ckeditor\plugins\imageresponsive\.git\refs\tags\v1.0.2" />
     <Content Include="Content\ckeditor\plugins\imageresponsive\.git\sourcetreeconfig" />
-    <Content Include="Content\ckeditor\plugins\imageresponsive\README.md" />
     <Content Include="Content\ckeditor\plugins\scayt\CHANGELOG.md" />
     <Content Include="Content\ckeditor\plugins\scayt\LICENSE.md" />
     <Content Include="Content\ckeditor\plugins\scayt\README.md" />
