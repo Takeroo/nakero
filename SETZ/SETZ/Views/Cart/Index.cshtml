@@ -1,0 +1,69 @@
+﻿@model SETZ.Models.CartModel
+@{
+    ViewBag.Title = "Корзина";
+    Layout = "~/Views/Shared/_custom_layout.cshtml";
+}
+
+<div class="check-out">
+    <div class="container">
+
+        @if (Model.items.Count() > 0)
+        {
+            <div class="bs-example4" data-example-id="simple-responsive-table">
+                <div >
+                    <table class="table-heading simpleCart_shelfItem">
+                        <tr>
+                            <th class="table-grid">Товар</th>
+
+                            <th>Цена</th>
+                            <th>Количество</th>
+                            <th>Всего</th>
+                        </tr>
+                        @foreach (var cartItem in Model.items)
+                        {
+                            var price = cartItem.price / cartItem.quantity;
+                            <tr class="cart-header" style="border:1px solid #EFECEC;">
+                                <td class="ring-in">
+                                    <a href="@Url.Action("Detail", "Product", new { id = cartItem.productID })" class="at-in"><img src="@Url.Content("~/Images/Product/")@cartItem.image" class="img-responsive" alt=""></a>
+                                    <div class="sed">
+                                        <h5><a href="@Url.Action("Detail", "Product", new { id = cartItem.productID })">@cartItem.name</a></h5>
+                                        @if (cartItem.size != null)
+                                        {
+                                            <p>Размер: @cartItem.size</p>
+                                        }
+                                        @if (cartItem.colour != null)
+                                        {
+                                            <div style="display:flex;"><p>Цвет:</p><span style="background: @cartItem.colour; padding:6px 12px; border:3px solid #EFECEC ; margin:3px;"></span> </div>
+                                        }
+                                        
+
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </td>
+                                <td>@price</td>
+                                <td>@cartItem.quantity</td>
+                                <td class="item_price">@cartItem.price</td>
+                                <td class="add-check"><a class="item_add hvr-skew-backward" href="@Url.Action("Delete", "Cart", new { id = cartItem.ID })">Удалить</a></td>
+                            </tr>
+                        }
+                        <tr class="cart-header" style="border:1px solid #EFECEC; background:#f5f5f5">
+                            <td class="ring-in">
+                                Количество товаров: 
+                            </td>
+                            <td>@Model.numberOfItems</td>
+                            <td>Итого к оплате:</td>
+                            <td class="item_price">@Model.totalPrice</td>
+                            <td class="add-check"></td>
+                        </tr>
+
+                    </table>
+
+                </div>
+            </div>
+            <div class="produced">
+                <a href="@Url.Action("Order", "Cart")" class="hvr-skew-backward">Оформить заказ</a>
+            </div>
+        }
+    </div>
+</div>
+

@@ -1,0 +1,24 @@
+﻿@model SETZ.Models.BrandModel
+
+<div class="panel panel-info" style="padding-bottom: 0; border: none;">
+    <div class="panel-body">
+        @using (Html.BeginForm("DeleteBrand", "Admin", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-inline" }))
+        {
+            string brandUpload = "upload-brand-" + Model.brand.Name;
+            string brandbrand = "brand-brand-" + Model.brand.ID;
+            string brandedit = "brand-edit-" + Model.brand.ID;
+            string branddelete = "brand-delete-" + Model.brand.ID;
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            @Html.HiddenFor(model => model.brand.ID);
+            <div class="form-group">
+                @Html.DisplayFor(model => model.brand.Name, new { placeholder = "Название Бренда", @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.brand.Name)
+            </div>
+            <input  type="submit" class="btn btn-danger" value="Удалить" id="register-submit">
+            <div class="btn btn-1 btn-default" onclick="showBrand('@brandbrand', '@brandedit', '@branddelete')">Отмена</div>
+
+        }
+    </div>
+</div>
+

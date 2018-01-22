@@ -1,0 +1,19 @@
+﻿@model SETZ.Section
+<div class="panel panel-danger">
+    <div class="panel-heading">
+        <h3 class="panel-title">Удалить раздел</h3>
+    </div>
+    <div class="panel-body">
+        @using (Html.BeginForm("DeleteSection", "Admin", FormMethod.Post, new { @class = "form-inline" }))
+        {
+            string sectionDelete = "section-delete-" + Model.ID;
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            @Html.HiddenFor(model => model.ID);
+
+            @Html.DisplayFor(model => model.Name)
+            <input type="submit" class="btn btn-primary" value="Удалить" id="register-submit">
+            <div class="btn btn-1 btn-default" onclick="hide('@sectionDelete')">Отмена</div>
+        }
+    </div>
+</div>

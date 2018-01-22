@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="nomaddoors-001-site3" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Talgar\\Documents\\Visual\ Studio\ 2017\\Projects\\SETZ\\SETZ\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Talgar\\Documents\\Visual\ Studio\ 2017\\Projects\\SETZ\\SETZ\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DB_A28A4D_setzEntities-Web.config Connection String" description="" value="metadata=res://*/DataModel.csdl|res://*/DataModel.ssdl|res://*/DataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=SQL5030.site4now.net;initial catalog=DB_A28A4D_setz;persist security info=True;user id=DB_A28A4D_setz_admin;password=AspireV5;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Talgar\\Documents\\Visual\ Studio\ 2017\\Projects\\SETZ\\SETZ\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DB_A28A4D_setzEntities']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="DefaultConnection_ConnectionString" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Talgar\\Documents\\Visual\ Studio\ 2017\\Projects\\SETZ\\SETZ\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

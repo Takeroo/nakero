@@ -1,0 +1,274 @@
+﻿@model SETZ.Models.ProductModel
+@{
+    ViewBag.Title = "Detail";
+}
+
+<div class="single">
+
+    <div class="container">
+
+@using (Html.BeginForm("Detail", "Product", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    @Html.HiddenFor(q => q.product.ID);
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <div style="float:right;">
+                    <a  class="btn btn-lg btn-info" href="@Url.Action("Edit", "Product", new { id = Model.product.ID })"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a  class="btn btn-lg btn-danger" href="@Url.Action("Delete", "Product", new { id = Model.product.ID })"><span class="glyphicon glyphicon-trash"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="col-md-5 grid">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li data-thumb="@Url.Content("~/Images/Product/")@Model.product.Image">
+                            <div class="thumb-image"> <img src="@Url.Content("~/Images/Product/")@Model.product.Image" data-imagezoom="true" class="img-responsive"> </div>
+                        </li>
+                        @foreach (var image in Model.images)
+                        {
+                            <li data-thumb="@Url.Content("~/Images/Imgs/")@image.Path">
+                                <div class="thumb-image"> <img src="@Url.Content("~/Images/Imgs/")@image.Path" data-imagezoom="true" class="img-responsive"> </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-7 single-top-in">
+                <div class="span_2_of_a1 simpleCart_shelfItem">
+                    <h3>@Model.product.Name, 
+                    @if (Model.brand != null)
+                    {
+                        <a>@Model.brand.Name</a>
+                    }
+                    </h3>
+                    @if (Model.product.Articul.Length > 0)
+                    {
+                        <p class="in-para">Articul: @Model.product.Articul</p>
+                    }
+                    <div class="price_single">
+                        <span class="reducedfrom item_price">@Model.product.Price Сом</span>
+                        <a href="#">click for offer</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <!--
+                        
+                    <h4 class="quick">Quick Overview:</h4>
+                    <p class="quick_desc"> Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; es</p>
+                    
+                        <div class="wish-list">
+                            <ul>
+                                <li class="wish"><a href="#"><span class="glyphicon glyphicon-check" aria-hidden="true"></span>Add to Wishlist</a></li>
+                                <li class="compare"><a href="#"><span class="glyphicon glyphicon-resize-horizontal" aria-hidden="true"></span>Add to Compare</a></li>
+                            </ul>
+                        </div>
+                    -->
+
+                    @if (Model.availableColours.Count > 1)
+                    {
+                        <div class="det_nav1" style="margin-bottom:45px;">
+                            <h4 >Выберите цвет :</h4>
+
+                            <div class="sky-form">
+
+                                <ul style="display:inline-flex; list-style-type: none;">
+
+                                    @foreach (var item in Model.availableColours)
+                                    {
+
+                                        <li class="radioColor" style="margin-right: 15px;">
+                                            <label class="radio">
+                                                @Html.RadioButtonFor(q => q.selectedColour, @item.ID)  <i style="border-radius: 0; background-color: @item.Hex; padding: 14px; border-width:4px;"></i>
+                                            </label>
+                                        </li>
+                                        @Html.ValidationMessageFor(model => model.selectedColour)
+
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    }
+                    else if (Model.availableColours.Count == 1)
+                    {
+                        <div class="sky-form" style="margin-bottom:25px;">
+                            <ul style="display:inline-flex; list-style-type: none;">
+                                <li class="radioColor" style="margin-right: 15px; display:inline-flex;">
+                                    <span class="code" style="margin-top:10px; margin-right: 5px;">Цвет: </span>
+                                    <label class="radio">
+                                       <i style="border-radius: 0; background-color:@Model.availableColours.FirstOrDefault().Hex; padding: 14px; border-width:4px;"></i>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    }
+
+
+
+                    <div class="det_nav1">
+
+                        @if (Model.availableSizes.Count > 1)
+                        {
+                            <h4 style=" margin: 3% 0 0 0;">Выберите размер :</h4>
+
+                            <div style="margin-top:5px;" class=" sky-form col col-4">
+                                <ul style="display:inline-flex; list-style-type: none;">
+                                    @foreach (var item in Model.availableSizes)
+                                    {
+                                        <li style="margin-right: 15px;"><label class="radio">@Html.RadioButtonFor(q => q.selectedSize, @item.Size)  <i></i>@item.Size</label></li>
+
+                                    }
+
+                                    <div class="clearfix"></div>
+                                </ul>
+                            </div>
+                            @Html.ValidationMessageFor(model => model.selectedSize)
+                        }
+                        else if (Model.availableSizes.Count == 1)
+                        {
+                            <div style="display:flex; margin:3px;">
+                                <span class="code">Размер: @Model.availableSizes.FirstOrDefault().Size</span>
+                            </div>
+                        }
+                    </div>
+
+
+                    <!--quantity
+                    <div class="quantity">
+                        <div class="quantity-select">
+                            <div class="entry value-minus">&nbsp;</div>
+                            <div  class="entry value" id="quantity" name="quantity"><span>1</span></div>
+                            <div class="entry value-plus active">&nbsp;</div>
+                        </div>
+                    </div>
+                    
+                    <script>
+                            $('.value-plus').on('click', function() {
+                                var divUpd = $(this).parent().find('.value'),
+                                    newVal = parseInt(divUpd.text(), 10) + 1;
+                                divUpd.text(newVal);
+                            });
+
+                            $('.value-minus').on('click', function() {
+                                var divUpd = $(this).parent().find('.value'),
+                                    newVal = parseInt(divUpd.text(), 10) - 1;
+                                if (newVal >= 1) divUpd.text(newVal);
+                            });
+                    </script>
+                    -->
+                    <p style="color:red; margin:5px;">@ViewBag.CurrentError</p>
+                    <input value="Добавить в корзину" type="submit" class="add-to item_add hvr-skew-backward">
+                    <div class="clearfix"> </div>
+                </div>
+
+            </div>
+            <div class="clearfix"> </div>
+            <!---->
+            <div class="tab-head">
+                <nav class="nav-sidebar">
+                    <ul class="nav tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Product Description</a></li>
+                       <!-- <li class=""><a href="#tab2" data-toggle="tab">Additional Information</a></li> -->
+                        <li class=""><a href="#tab3" data-toggle="tab">Reviews</a></li>
+                    </ul>
+                </nav>
+                <div class="tab-content one">
+                    <div class="tab-pane active text-style" id="tab1">
+                        <div class="facts">
+                            @Html.Raw(Model.product.About)
+                        </div>
+
+                    </div>
+                    <!--
+                    <div class="tab-pane text-style" id="tab2">
+
+                        <div class="facts">
+                            <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections </p>
+                            <ul>
+                                <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Multimedia Systems</li>
+                                <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Digital media adapters</li>
+                                <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Set top boxes for HDTV and IPTV Player </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    -->
+                    
+                    <div class="tab-pane text-style" id="tab3">
+
+                        <div class="facts">
+                            <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined </p>
+                            <ul>
+                                <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Research</li>
+                                <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Design and Development</li>
+                                <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Porting and Optimization</li>
+                                <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>System integration</li>
+                                <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Verification, Validation and Testing</li>
+                                <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Maintenance and Support</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!---->
+        </div>
+
+}
+        <!---->
+
+        <div class="col-md-3 product-bottom product-at">
+            @Html.Action("SideBar", "Home", new { section = Model.product.SectionID, subSection = Model.product.SubSectionID })
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+
+</div>
+
+<style>
+    .sky-form .radio input:checked + i, .sky-form .checkbox input:checked + i, .sky-form .toggle input:checked + i {
+        border-color: #6CB672;
+    }
+    .sky-form .radio {
+        color: #B3B3B3;
+    }
+
+        .sky-form .radio i {
+            position: absolute;
+            top: 3px;
+            left: 0;
+            display: block;
+            width: 25px;
+            height: 25px;
+            outline: none;
+            border-width: 4px;
+            border-style: solid;
+            background: #fff;
+        }
+</style>
+
+<script src="@Url.Content("~/Content/setzweb/")js/imagezoom.js"></script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script defer src="@Url.Content("~/Content/setzweb/")js/jquery.flexslider.js"></script>
+<script>
+    
+    var cw = $('.flex-control-nav');
+    var ch = cw * 10;
+    console.log(cw);
+    $('.flex-control-nav').css({ 'height': ch + 'px' });
+
+    // Can also be used with $(document).ready()
+    $(window).load(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: "thumbnails"
+        });
+    });
+
+   
+</script>

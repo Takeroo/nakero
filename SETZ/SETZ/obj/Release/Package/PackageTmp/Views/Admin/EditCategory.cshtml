@@ -1,0 +1,30 @@
+﻿@model SETZ.Category
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">Редактировать категорию</h3>
+    </div>
+    <div class="panel-body">
+        @using (Html.BeginForm("EditCategory", "Admin", FormMethod.Post, new { @class = "form-inline" }))
+        {
+            string categoryedit = "category-edit-" + Model.ID;
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            @Html.HiddenFor(model => model.ID);
+            <div class="form-group">
+                @Html.EditorFor(model => Model.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => Model.Name)
+            </div>
+            <div class="form-group">
+                @Html.EditorFor(model => model.Order)
+                @Html.ValidationMessageFor(model => model.Order)
+            </div>
+            <div class="form-group">
+                @Html.CheckBoxFor(model => model.Visibility)
+                Активировать
+                @Html.ValidationMessageFor(model => model.Visibility)
+            </div>
+            <input type="submit" class="btn btn-primary" value="Сохранить" id="register-submit">
+            <div class="btn btn-1 btn-default" onclick="hide('@categoryedit')">Отмена</div>
+        }
+    </div>
+</div>

@@ -1,0 +1,200 @@
+﻿@model List<SETZ.Models.ProductModel>
+@{
+    ViewBag.Title = "Главная";
+}
+
+<div class="container">
+    <div class="content">
+        <div class="banner">
+            <div class="container">
+                <section class="rw-wrapper">
+                    <h1 class="rw-sentence">
+                        <span>Fashion &amp; Beauty</span>
+                        <div class="rw-words rw-words-1">
+                            <span>Beautiful Designs</span>
+                            <span>Sed ut perspiciatis</span>
+                            <span> Totam rem aperiam</span>
+                            <span>Nemo enim ipsam</span>
+                            <span>Temporibus autem</span>
+                            <span>intelligent systems</span>
+                        </div>
+                        <div class="rw-words rw-words-2">
+                            <span>We denounce with right</span>
+                            <span>But in certain circum</span>
+                            <span>Sed ut perspiciatis unde</span>
+                            <span>There are many variation</span>
+                            <span>The generated Lorem Ipsum</span>
+                            <span>Excepteur sint occaecat</span>
+                        </div>
+                    </h1>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--content-->
+    <div class="content">
+        <div class="container">
+            <div class="content-top">
+                <div class="col-md-6 col-md">
+                    <div class="col-1">
+                        <a href="single.html" class="b-link-stroke b-animate-go  thickbox">
+                            <img src="@Url.Content("~/Images/")pi.jpg" class="img-responsive" alt="" />
+                            <div class="b-wrapper1 long-img">
+                                <p class="b-animate b-from-right    b-delay03 ">Lorem ipsum</p>
+                                <label class="b-animate b-from-right    b-delay03 "></label>
+                                <h3 class="b-animate b-from-left    b-delay03 ">Trendy</h3></div>
+                        </a>
+
+                        <!---<a href="single.html"><img src="@Url.Content("~/Images/")pi.jpg" class="img-responsive" alt=""></a>-->
+                    </div>
+                    <div class="col-2">
+                        <span>Hot Deal</span>
+                        <h2><a href="single.html">Luxurious &amp; Trendy</a></h2>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years</p>
+                        <a href="single.html" class="buy-now">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md1">
+                    <div class="col-3">
+                        <a href="@Url.Action("Index", "Product", new { section = 1 })">
+                            <img src="@Url.Content("~/Images/")pi3.jpg" class="img-responsive" alt="">
+                            <div class="col-pic">
+                                <h5>Женщинам</h5>
+                                <label></label>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="@Url.Action("Index", "Product", new { section = 2 })"><img src="@Url.Content("~/Images/")pi1.jpg" class="img-responsive" alt="">
+                            <div class="col-pic">
+                                <h5>Мужчинам</h5>
+                                <label></label>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="@Url.Action("Index", "Product", new { section = 1 })"><img src="@Url.Content("~/Images/")pi2.jpg" class="img-responsive" alt="">
+                            <div class="col-pic">
+                                <h5>Детям</h5>
+                                 <label></label>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!--products-->
+            <div class="content-mid">
+                <h3>Новые товары</h3>
+                <label class="line"></label>
+                <div class="mid-popular">
+                    @for (int i = 0; i < 4; i++)
+                    {
+                        <div class="col-md-3 Model[i]-grid simpleCart_shelfItem">
+                            <div class=" mid-pop">
+                                <div class="pro-img" style="width:100%; padding-top:130%; position:relative; overflow:hidden;">
+                                    <img src="@Url.Content("~/Images/Product/")@Model[i].product.Image" class="img-responsive" alt="" style="position:absolute; right:0; top:0; left:0; bottom:0; height:100%; width: auto!important; max-width:none;">
+                                    <div class="zoom-icon ">
+                                        <a href="@Url.Content("~/Images/Product/")@Model[i].product.Image" rel="title" class="picture b-link-stripe b-animate-go  thickbox"><i class="glyphicon glyphicon-search icon "></i></a>
+                                        <a href="@Url.Action("Detail", "Product", new { id = Model[i].product.ID })"><i class="glyphicon glyphicon-menu-right icon"></i></a>
+                                    </div>
+                                </div>
+                                <div class="mid-1">
+                                    <div class="women">
+                                        <div class="col-sm-9 women-top" style="padding:0">
+                                            @if (Model[i].brand != null)
+                                            {
+                                                <span>@Model[i].brand.Name</span>
+                                            }
+
+                                            <h6><a href="@Url.Action("Detail", "Product", new { id = Model[i].product.ID })">@Model[i].product.Name</a></h6>
+                                        </div>
+                                        <div class="col-sm-3 img item_add" style="padding:0">
+                                            <a href="#"><img src="@Url.Content("~/Images/")ca.png" alt=""></a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="mid-2">
+                                        @if (Model[i].product.Discount != null && Model[i].product.Discount > 0)
+                                        {
+                                            int newPrice = Model[i].product.Price * (100 - Model[i].product.Discount) / 100 ?? 100;
+                                            <p><label>@Model[i].product.Price</label><em class="item_price">@newPrice Сом</em></p>
+                                        }
+                                        else
+                                        {
+                                            <p><em class="item_price">@Model[i].product.Price Сом</em></p>
+                                        }
+
+                                        <div class="block">
+                                            <!--
+                                <div class="starbox small ghosting"> </div>
+                                -->
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <div class="clearfix"></div>
+                </div>
+                <div class="mid-popular">
+                    @for (int i = 4; i < 8; i++)
+                    {
+                        <div class="col-md-3 Model[i]-grid simpleCart_shelfItem">
+                            <div class=" mid-pop">
+                                <div class="pro-img" style="width:100%; padding-top:130%; position:relative; overflow:hidden;">
+                                    <img src="@Url.Content("~/Images/Product/")@Model[i].product.Image" class="img-responsive" alt="" style="position:absolute; right:0; top:0; left:0; bottom:0; height:100%; width: auto!important; max-width:none;">
+                                    <div class="zoom-icon ">
+                                        <a href="@Url.Content("~/Images/Product/")@Model[i].product.Image" rel="title" class="picture b-link-stripe b-animate-go  thickbox"><i class="glyphicon glyphicon-search icon "></i></a>
+                                        <a href="@Url.Action("Detail", "Product", new { id = Model[i].product.ID })"><i class="glyphicon glyphicon-menu-right icon"></i></a>
+                                    </div>
+                                </div>
+                                <div class="mid-1">
+                                    <div class="women">
+                                        <div class="col-sm-9 women-top" style="padding:0">
+                                            @if (Model[i].brand != null)
+                                            {
+                                                <span>@Model[i].brand.Name</span>
+                                            }
+
+                                            <h6><a href="@Url.Action("Detail", "Product", new { id = Model[i].product.ID })">@Model[i].product.Name</a></h6>
+                                        </div>
+                                        <div class="col-sm-3 img item_add" style="padding:0">
+                                            <a href="#"><img src="@Url.Content("~/Images/")ca.png" alt=""></a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="mid-2">
+                                        @if (Model[i].product.Discount != null && Model[i].product.Discount > 0)
+                                        {
+                                            int newPrice = Model[i].product.Price * (100 - Model[i].product.Discount) / 100 ?? 100;
+                                            <p><label>@Model[i].product.Price</label><em class="item_price">@newPrice Сом</em></p>
+                                        }
+                                        else
+                                        {
+                                            <p><em class="item_price">@Model[i].product.Price Сом</em></p>
+                                        }
+
+                                        <div class="block">
+                                            <!--
+                                <div class="starbox small ghosting"> </div>
+                                -->
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!--//products-->
+        </div>
+    </div>

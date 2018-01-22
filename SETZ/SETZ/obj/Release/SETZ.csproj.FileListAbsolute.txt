@@ -1,0 +1,150 @@
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\obj\Release\SETZ.csproj.CoreCompileInputs.cache
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\ApplicationInsights.config
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\SETZ.dll.config
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\SETZ.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\SETZ.pdb
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Antlr3.Runtime.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\EntityFramework.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\EntityFramework.SqlServer.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Microsoft.AI.Web.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Newtonsoft.Json.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\PagedList.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\PagedList.Mvc.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\System.Web.Helpers.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\System.Web.Mvc.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\System.Web.Optimization.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\System.Web.Razor.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\System.Web.WebPages.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\System.Web.WebPages.Razor.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\WebGrease.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\EntityFramework.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\EntityFramework.SqlServer.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\PagedList.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\PagedList.Mvc.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\System.Web.Helpers.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\System.Web.Mvc.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\System.Web.Optimization.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\System.Web.Razor.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\System.Web.WebPages.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\System.Web.WebPages.Razor.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Antlr3.Runtime.pdb
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Newtonsoft.Json.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\bin\Microsoft.AI.Web.xml
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\obj\Release\SETZ.dll
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\obj\Release\SETZ.pdb
+C:\Users\Talgar\Documents\Visual Studio 2017\Projects\SETZ\SETZ\obj\Release\SETZ.csprojResolveAssemblyReference.cache
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\ApplicationInsights.config
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\SETZ.dll.config
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\SETZ.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\SETZ.pdb
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Antlr3.Runtime.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\EntityFramework.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\EntityFramework.SqlServer.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Microsoft.AI.Web.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Newtonsoft.Json.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\PagedList.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\PagedList.Mvc.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\System.Web.Helpers.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\System.Web.Mvc.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\System.Web.Optimization.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\System.Web.Razor.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\System.Web.WebPages.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\System.Web.WebPages.Razor.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\WebGrease.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\EntityFramework.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\EntityFramework.SqlServer.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\PagedList.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\PagedList.Mvc.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\System.Web.Helpers.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\System.Web.Mvc.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\System.Web.Optimization.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\System.Web.Razor.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\System.Web.WebPages.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\System.Web.WebPages.Razor.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Antlr3.Runtime.pdb
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Newtonsoft.Json.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\bin\Microsoft.AI.Web.xml
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\obj\Release\SETZ.csprojResolveAssemblyReference.cache
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\obj\Release\SETZ.csproj.CoreCompileInputs.cache
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\obj\Release\SETZ.dll
+C:\Users\Talgar\Desktop\currentweb\Nakero\SETZ\SETZ\obj\Release\SETZ.pdb
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\ApplicationInsights.config
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\SETZ.dll.config
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\SETZ.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\SETZ.pdb
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Antlr3.Runtime.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\EntityFramework.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\EntityFramework.SqlServer.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Microsoft.AI.Web.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Newtonsoft.Json.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\PagedList.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\PagedList.Mvc.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\System.Web.Helpers.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\System.Web.Mvc.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\System.Web.Optimization.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\System.Web.Razor.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\System.Web.WebPages.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\System.Web.WebPages.Razor.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\WebGrease.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\EntityFramework.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\EntityFramework.SqlServer.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\PagedList.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\PagedList.Mvc.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\System.Web.Helpers.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\System.Web.Mvc.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\System.Web.Optimization.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\System.Web.Razor.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\System.Web.WebPages.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\System.Web.WebPages.Razor.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Antlr3.Runtime.pdb
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Newtonsoft.Json.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\bin\Microsoft.AI.Web.xml
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\obj\Release\SETZ.csprojResolveAssemblyReference.cache
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\obj\Release\SETZ.csproj.CoreCompileInputs.cache
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\obj\Release\SETZ.dll
+C:\Users\Talgar\Desktop\Nakero\SETZ\SETZ\obj\Release\SETZ.pdb
