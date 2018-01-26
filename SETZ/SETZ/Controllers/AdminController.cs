@@ -10,7 +10,7 @@ using System.Web.Mvc;
 
 namespace SETZ.Controllers
 {
-    [Authorize]
+    [Authorize(Roles ="Admin")]
     public class AdminController : Controller
     {
         //

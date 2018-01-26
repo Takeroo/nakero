@@ -44,7 +44,7 @@ namespace SETZ.Controllers
                     {
                         JavaScriptSerializer js = new JavaScriptSerializer();
                         string data = js.Serialize(user);
-                        FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(1, user.Email, DateTime.Now, DateTime.Now.AddMinutes(180), model.RememberMe, data);
+                        FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(1, user.PhoneNumber, DateTime.Now, DateTime.Now.AddMinutes(180), model.RememberMe, data);
                         string encToken = FormsAuthentication.Encrypt(ticket);
                         HttpCookie authoCookies = new HttpCookie(FormsAuthentication.FormsCookieName, encToken);
                         Response.Cookies.Add(authoCookies);
@@ -84,7 +84,7 @@ namespace SETZ.Controllers
                     {
                         JavaScriptSerializer js = new JavaScriptSerializer();
                         string data = js.Serialize(user);
-                        FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(1, user.Email, DateTime.Now, DateTime.Now.AddMinutes(180), true, data);
+                        FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(1, user.PhoneNumber, DateTime.Now, DateTime.Now.AddMinutes(180), true, data);
                         string encToken = FormsAuthentication.Encrypt(ticket);
                         HttpCookie authoCookies = new HttpCookie(FormsAuthentication.FormsCookieName, encToken);
                         Response.Cookies.Add(authoCookies);

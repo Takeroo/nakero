@@ -1,0 +1,44 @@
+﻿@model List<HttpPostedFileBase>
+
+@using (Html.BeginForm("АddImages", "Product", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-inline" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <div class="col-md-12" style="padding:10px;">
+        <div class="col-md-6">
+            <p>Выберите изображения для товара</p>
+            <div class="form-group">
+                <span class="btn btn-primary btn-file" onclick="openUpload('upload-files')">
+                    <i class="glyphicon glyphicon-upload"></i> Browse @Html.TextBoxFor(model => model, new { type = "file", multiple = "multiple", style = "width: 150px; display:none;", @id = "upload-files" })
+                </span>
+                <span id="upload-files-span"></span>
+                @Html.ValidationMessageFor(model => model)
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="col-md-12">
+            <div style="float:right;">
+                <input class="btn btn-lg btn-primary" type="submit" value="Добавить Изображения" id="register-submit">
+                <a class="btn btn-lg btn-default" style="margin-left:40px;" href="@Url.Action("Index", "Product")">Отменить</a>
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    function openUpload(id) {
+        var input = document.getElementById(id);
+        input.click();
+        input.onclick = function () {
+            this.value = null;
+        };
+        var spanID = id + "-span";
+        var span = document.getElementById(spanID);
+        input.onchange = function () {
+            span.innerHTML = this.value;
+        };
+    }
+</script>

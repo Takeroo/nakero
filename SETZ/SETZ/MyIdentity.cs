@@ -11,7 +11,7 @@ namespace SETZ
         public User User { get; set; }
         public MyIdentity(User user)
         {
-            Identity = new GenericIdentity(user.Email);
+            Identity = new GenericIdentity(user.PhoneNumber);
             User = user;
         }
         public string AuthenticationType
