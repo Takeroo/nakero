@@ -66,22 +66,21 @@
 
 
                             @if (identity.User.Role == "Admin")
-                        {
-                            <!--
-                        <li><a href="@Url.Action("Login", "Account")">Login</a></li>
-                        <li><a href="@Url.Action("Register", "Account")">Register</a></li>
-                        -->
+    {
 
-                    }
+                        <li><a href="@Url.Action("Index", "Admin")">Admin</a></li>
+                        <li><a href="@Url.Action("Create", "Product")">New Product</a></li>
+
+}
                             <li>
                                 @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
-                            {
-                                @Html.AntiForgeryToken()
+        {
+                        @Html.AntiForgeryToken()
 
-                                <i class="glyphicon glyphicon-log-out"></i>
-                                <a href="javascript:document.getElementById('logoutForm').submit()"> Выйти</a>
+                        <i class="glyphicon glyphicon-log-out"></i>
+                        <a href="javascript:document.getElementById('logoutForm').submit()"> Выйти</a>
 
-                        }
+}
                             </li>
                             <li>
                                 <i class="glyphicon glyphicon-shopping-cart"></i>

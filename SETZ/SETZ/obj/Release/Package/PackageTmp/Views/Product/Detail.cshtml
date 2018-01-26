@@ -19,9 +19,13 @@
 
                 <div style="float:right;">
                     @if (Request.IsAuthenticated)
-                    { 
-                    <a class="btn btn-lg btn-info" href="@Url.Action("Edit", "Product", new { id = Model.product.ID })"><span class="glyphicon glyphicon-pencil"></span></a>
+                    {
+                        var identity = (HttpContext.Current.User as SETZ.MyPrincipal).Identity as SETZ.MyIdentity;
+                        if (identity.User.Role == "Admin")
+                        {
+                            <a class="btn btn-lg btn-info" href="@Url.Action("Edit", "Product", new { id = Model.product.ID })"><span class="glyphicon glyphicon-pencil"></span></a>
                     <a class="btn btn-lg btn-danger" href="@Url.Action("Delete", "Product", new { id = Model.product.ID })"><span class="glyphicon glyphicon-trash"></span></a>
+                        }
                     }
                 </div>
             </div>
